@@ -11,23 +11,6 @@
         }
       }
     },
-    "litePluginSettings": {
-      "@jupyterlite/pyolite-kernel-extension:plugin": {
-        "pipliteUrls": [
-          "https://cdn.jsdelivr.net/npm/@deathbeds/piplite@0.1.0-alpha.4/dist/piplite.js"
-        ],
-        "requirements": [
-          "perspective-python",
-          "ipyregulartable"
-        ]
-      },
-      "@jupyterlite/pyolite-kernel-extension:kernel": {
-        "kernelSettings": {
-          "registerRuntime": true
-        }
-      }
-    }
-  },
   "jupytext": {
     "formats": "ipynb,py:percent",
     "default_notebook_metadata_filter": "-all",
