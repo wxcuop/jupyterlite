@@ -18,7 +18,7 @@
     "default_cell_metadata_filter": "-all"
   },
   "pipliteUrls": [
-    "https://cdn.jsdelivr.net/pyodide/v0.18.1/full/pyodide.js"
+    "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"
   ],
   "pyodidePackages": [
     "ipydatagrid"
