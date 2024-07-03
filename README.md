@@ -19,3 +19,4 @@ For more info, keep an eye on the JupyterLite documentation:
 - Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
 - Compatible Extensions: https://github.com/jupyterlab/jupyterlab/issues/14590
 - https://pyodide.org/en/stable/usage/packages-in-pyodide.html
+- https://www.bloomberg.com/company/stories/ipydatagrid-adds-interactive-data-grids-to-the-jupyter-ecosystem/
