@@ -1,0 +1,20 @@
+{
+  "jupyter-config-data": {
+    "appName": "JupyterLite",
+    "appVersion": "0.1.0",
+    "settingsOverrides": {
+      "@jupyterlab/notebook-extension:tracker": {
+        "defaultCell": "code",
+        "codeCellConfig": {
+          "lineNumbers": true
+        }
+      }
+    },
+    "exposeAppInBrowser": true
+  },
+  "jupytext": {
+    "formats": "ipynb,py:percent",
+    "default_notebook_metadata_filter": "-all",
+    "default_cell_metadata_filter": "-all"
+  }
+}
