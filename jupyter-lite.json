@@ -13,7 +13,6 @@
       "litePluginSettings": {
         "@jupyterlite/pyodide-kernel-extension:kernel": {
           "disablePyPIFallback": false,
-          "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js",
         }
       }
     }
