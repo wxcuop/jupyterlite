@@ -43,8 +43,9 @@ ipyleaflet
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
-#jupytext #DOESN'T WORK
+jupytext #DOESN'T WORK 100%
 #perspective-python==2.7.1 DOESN'T WORK
 ipydatagrid #just use via pip?
 jupyterlab-filesystem-access
+jupyterlab-open-url-parameter
 
