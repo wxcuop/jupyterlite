@@ -2,7 +2,7 @@
 
 JupyterLite deployed as a static site to GitHub Pages
 
-➡️ **https://wxcuop.github.io/jupyter-lite**
+➡️ **https://wxcuop.github.io/jupyterlite**
 
 ## Requirements
 
