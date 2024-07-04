@@ -48,4 +48,10 @@ jupytext #DOESN'T WORK 100%
 ipydatagrid #just use via pip?
 jupyterlab-filesystem-access
 jupyterlab-open-url-parameter
-
+# From panel https://github.com/holoviz/panel/blob/main/lite/requirements.txt
+awscli
+bokeh
+jupyter_bokeh
+nbformat
+pkginfo
+pyviz_comms
