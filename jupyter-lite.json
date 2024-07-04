@@ -9,15 +9,23 @@
         "codeCellConfig": {
           "lineNumbers": true
         }
-      }
-    },
-    "litePluginSettings": {
-      "@jupyterlite/pyodide-kernel-extension:kernel": {
-        "disablePyPIFallback": true
+      },
+      "litePluginSettings": {
+        "@jupyterlite/pyodide-kernel-extension:kernel": {
+          "disablePyPIFallback": false
+        }
       }
     }
+  },
+  "jupytext": {
+    "formats": "ipynb,py:percent",
+    "default_notebook_metadata_filter": "-all",
+    "default_cell_metadata_filter": "-all"
   },
   "pipliteUrls": [
     "https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"
   ],
+  "pyodidePackages": [
+    "jupytext"
+  ]
 }
