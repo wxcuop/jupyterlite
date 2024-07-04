@@ -46,4 +46,5 @@ bqplot
 #jupytext #DOESN'T WORK
 #perspective-python==2.7.1 DOESN'T WORK
 ipydatagrid #just use via pip?
+jupyterlab-filesystem-access
 
