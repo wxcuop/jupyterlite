@@ -25,3 +25,4 @@ For more info, keep an eye on the JupyterLite documentation:
 - please note that the browser’s local storage has a limited capacity, and you might not be able to upload large files. But smaller files up to ~50MB should be fine.
 - "new folder" icon does not work
 - https://jupyterlite.readthedocs.io/en/stable/howto/content/python.html#
+- https://github.com/jupyterlite/jupyterlite/issues/403
