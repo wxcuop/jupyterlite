@@ -22,3 +22,4 @@ For more info, keep an eye on the JupyterLite documentation:
 - https://www.bloomberg.com/company/stories/ipydatagrid-adds-interactive-data-grids-to-the-jupyter-ecosystem/
 - https://github.com/innovationOUtside/ouseful_jupyterlite_utils/tree/main
 - https://panel.holoviz.org/how_to/wasm/jupyterlite.html
+- please note that the browser’s local storage has a limited capacity, and you might not be able to upload large files. But smaller files up to ~50MB should be fine.
