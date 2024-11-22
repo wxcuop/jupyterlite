@@ -49,3 +49,4 @@ folium
 seaborn 
 
 datasets
+duckdb
