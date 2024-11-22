@@ -51,4 +51,6 @@ seaborn
 datasets
 duckdb
 
-pyviz_comms 
+pyviz_comms
+bokeh==3.6.1
+panel==1.5.4
