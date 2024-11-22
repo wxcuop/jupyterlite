@@ -47,3 +47,5 @@ bqplot
 ipydatagrid
 folium
 seaborn 
+
+datasets
