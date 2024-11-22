@@ -28,3 +28,4 @@ For more info, keep an eye on the JupyterLite documentation:
 - "new folder" icon does not work
 - https://github.com/jupyterlite/jupyterlite/issues/403
 - https://github.com/koenvo/pyodide-http
+- https://pyodide.org/en/stable/usage/loading-custom-python-code.html
