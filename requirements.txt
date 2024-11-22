@@ -50,3 +50,5 @@ seaborn
 
 datasets
 duckdb
+
+pyviz_comms 
