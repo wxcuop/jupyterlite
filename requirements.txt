@@ -47,10 +47,7 @@ bqplot
 ipydatagrid
 folium
 seaborn 
-
 datasets
 duckdb
-bokeh
 pyviz_comms
-
 litegitpuller
