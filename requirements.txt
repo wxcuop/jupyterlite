@@ -18,7 +18,7 @@ jupyterlab-language-pack-zh-CN
 jupyterlite-p5-kernel==0.1.0
 
 # webR kernel (optional)
-jupyterlite-webr-kernel @ git+https://github.com/r-wasm/jupyterlite-webr-kernel@main
+jupyterlite-webr @ git+https://github.com/r-wasm/jupyterlite-webr-kernel@main
 
 
 # JupyterLab: Fasta file renderer (optional)
