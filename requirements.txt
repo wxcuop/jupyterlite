@@ -50,7 +50,7 @@ seaborn
 
 datasets
 duckdb
-bokeh==3.6.1
+bokeh
 pyviz_comms
 
 litegitpuller
