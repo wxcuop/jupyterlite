@@ -4,9 +4,9 @@ JupyterLite deployed as a static site to GitHub Pages
 
 ➡️ **https://wxcuop.github.io/jupyterlite**
 
-➡️**https://jupyterlite1.pages.dev/lab/**
+➡️**https://jupyterlite1.pages.dev/**
 
-➡️**https://wxcuop.netlify.app/lab/index.html**
+➡️**https://wxcuop.netlify.app/**
 ## Requirements
 
 JupyterLite is being tested against modern web browsers:
