@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export NODE_VERSION=18
 #Deploy.sh for netlify
 
 yum install wget -y
