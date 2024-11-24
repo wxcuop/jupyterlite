@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Deploy.sh for netlify
+
 yum install wget -y
 
 wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
@@ -16,7 +18,7 @@ eval "$(./bin/micromamba shell hook -s bash)"
 # Activate the Micromamba environment
 micromamba create -n jupyterenv python=3.12 -c conda-forge -y
 micromamba activate jupyterenv
-
+micromamba install conda-forge::nodejs #needed to build webr
 # install the dependencies
 python -m pip install -r requirements.txt
 
