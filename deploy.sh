@@ -8,7 +8,8 @@ wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/m
 
 export PATH="$PWD/bin:$PATH"
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
-
+mkdir -p .mamba/pkgs
+chmod -R u+w .mamba
 # Initialize Micromamba shell
 #./bin/micromamba shell init -s bash -p $MAMBA_ROOT_PREFIX
 ./bin/micromamba shell init -s bash -r $MAMBA_ROOT_PREFIX
@@ -21,7 +22,7 @@ micromamba activate jupyterenv
 micromamba install conda-forge::nodejs #needed to build webr
 # install the dependencies
 python -m pip install -r requirements.txt
-
+python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
 # build the JupyterLite site
 jupyter lite --version
 jupyter lite build --contents content --output-dir dist
