@@ -1,5 +1,5 @@
 #!/bin/bash
-export NODE_VERSION=18
+#export NODE_VERSION=18
 #Deploy.sh for netlify
 
 #yum install wget -y
@@ -13,6 +13,7 @@ chmod -R u+w .mamba
 # Initialize Micromamba shell
 #./bin/micromamba shell init -s bash -p $MAMBA_ROOT_PREFIX
 ./bin/micromamba shell init -s bash -r $MAMBA_ROOT_PREFIX
+micromamba config set use_lockfiles false
 # Source Micromamba environment directly
 eval "$(./bin/micromamba shell hook -s bash)"
 
@@ -20,6 +21,7 @@ eval "$(./bin/micromamba shell hook -s bash)"
 micromamba create -n jupyterenv python=3.12 -c conda-forge -y
 micromamba activate jupyterenv
 micromamba install conda-forge::nodejs #needed to build webr
+
 # install the dependencies
 python -m pip install -r requirements.txt
 python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
