@@ -2,7 +2,7 @@
 export NODE_VERSION=18
 #Deploy.sh for netlify
 
-yum install wget -y
+#yum install wget -y
 
 wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 
@@ -10,7 +10,7 @@ export PATH="$PWD/bin:$PATH"
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
 
 # Initialize Micromamba shell
-./bin/micromamba shell init -s bash --no-modify-profile -p $MAMBA_ROOT_PREFIX
+./bin/micromamba shell init -s bash -p $MAMBA_ROOT_PREFIX
 
 # Source Micromamba environment directly
 eval "$(./bin/micromamba shell hook -s bash)"
