@@ -10,8 +10,8 @@ export PATH="$PWD/bin:$PATH"
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
 
 # Initialize Micromamba shell
-./bin/micromamba shell init -s bash -p $MAMBA_ROOT_PREFIX
-
+#./bin/micromamba shell init -s bash -p $MAMBA_ROOT_PREFIX
+./bin/micromamba shell init -s bash -r $MAMBA_ROOT_PREFIX
 # Source Micromamba environment directly
 eval "$(./bin/micromamba shell hook -s bash)"
 
