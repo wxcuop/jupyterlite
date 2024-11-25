@@ -38,3 +38,19 @@ For more info, keep an eye on the JupyterLite documentation:
 Due to limitations in the way the webR worker thread is implemented, the persistent JupyterLite file storage and the Emscripten VFS used by webR are not accessible to one another. The simplest way to import data into a webR notebook at the time of writing is by using R functions such as read.csv() with a publicly accessible URL.
 
 While webR supports interrupting long running computations, interrupting cell execution has not yet been implemented in JupyterLite. An infinite looping cell can only be recovered by restarting the kernel.
+
+## DuckDB limitations
+https://duckdb.org/2024/10/02/pyodide.html
+https://github.com/iqmo-org/magic_duckdb
+Running in the browser is a more restrictive environment (for security purposes), so there are some limitations when using DuckDB in Pyodide. There is no free lunch!
+
+Single-threaded
+Pyodide currently limits execution to a single thread
+A few extra steps to query remote files
+Remote files can't be accessed by DuckDB directly
+Instead, pull the files locally with Pyodide first
+DuckDB-Wasm has custom enhancements to make this possible, but these are not present in DuckDB's Python client
+No runtime-loaded extensions
+Several extensions are automatically included: parquet, json, icu, tpcds, and tpch.
+Release cadence aligned with Pyodide
+At the time of writing, duckdb-pyodide is at 1.0.0 rather than 1.1.1
