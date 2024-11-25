@@ -10,6 +10,12 @@ jupyterlite-pyodide-kernel==0.4.4
 # JavaScript kernel (optional)
 jupyterlite-javascript-kernel==0.3.0
 
+# Lua kernel (optional)
+jupyterlite_xeus_lua
+
+# SQLite kernal (optional)
+jupyterlite_xeus_sqlite
+
 # Language support (optional)
 jupyterlab-language-pack-fr-FR
 jupyterlab-language-pack-zh-CN
