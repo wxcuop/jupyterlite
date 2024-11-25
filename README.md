@@ -50,7 +50,14 @@ A few extra steps to query remote files
 Remote files can't be accessed by DuckDB directly
 Instead, pull the files locally with Pyodide first
 DuckDB-Wasm has custom enhancements to make this possible, but these are not present in DuckDB's Python client
+
+
+## DuckDB limitations
 No runtime-loaded extensions
 Several extensions are automatically included: parquet, json, icu, tpcds, and tpch.
 Release cadence aligned with Pyodide
 At the time of writing, duckdb-pyodide is at 1.0.0 rather than 1.1.1
+
+
+## Working around CORS
+https://jarnaldich.me/blog/2023/01/29/jupyterlite-jsonp.html
