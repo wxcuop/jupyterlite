@@ -54,8 +54,11 @@ DuckDB-Wasm has custom enhancements to make this possible, but these are not pre
 
 ## DuckDB limitations
 No runtime-loaded extensions
+
 Several extensions are automatically included: parquet, json, icu, tpcds, and tpch.
+
 Release cadence aligned with Pyodide
+
 At the time of writing, duckdb-pyodide is at 1.0.0 rather than 1.1.1
 
 
