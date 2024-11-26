@@ -63,6 +63,7 @@ At the time of writing, duckdb-pyodide is at 1.0.0 rather than 1.1.1
 https://jarnaldich.me/blog/2023/01/29/jupyterlite-jsonp.html
 
 ## CORS Proxy
-https://egghead.io/lessons/cloudflare-add-cors-headers-to-a-third-party-api-response-in-a-workers-api
+-https://egghead.io/lessons/cloudflare-add-cors-headers-to-a-third-party-api-response-in-a-workers-api
+-https://github.com/Zibri/cloudflare-cors-anywhere
+-https://github.com/testcab/docker-cors-anywhere/tree/master
 
-https://github.com/Zibri/cloudflare-cors-anywhere
