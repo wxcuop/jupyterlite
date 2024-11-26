@@ -64,3 +64,4 @@ https://jarnaldich.me/blog/2023/01/29/jupyterlite-jsonp.html
 
 ## CORS Proxy
 https://egghead.io/lessons/cloudflare-add-cors-headers-to-a-third-party-api-response-in-a-workers-api
+https://github.com/Zibri/cloudflare-cors-anywhere
