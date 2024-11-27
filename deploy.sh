@@ -24,7 +24,7 @@ micromamba install conda-forge::nodejs #needed to build webr
 
 # install the dependencies
 python -m pip install -r requirements.txt
-python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
+#python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
 # build the JupyterLite site
 jupyter lite --version
 jupyter lite build --contents content --output-dir dist
