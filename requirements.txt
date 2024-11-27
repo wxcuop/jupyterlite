@@ -14,14 +14,14 @@ jupyterlite-pyodide-kernel==0.4.4
 #jupyterlite_xeus_lua
 
 # SQLite kernal (optional)
-jupyterlite_xeus_sqlite
+#jupyterlite_xeus_sqlite
 
 # Language support (optional)
 #jupyterlab-language-pack-fr-FR
 #jupyterlab-language-pack-zh-CN
 
 # P5 kernel (optional)
-jupyterlite-p5-kernel==0.1.0
+#jupyterlite-p5-kernel==0.1.0
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3.3.0,<4
