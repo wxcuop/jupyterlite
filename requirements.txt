@@ -37,6 +37,7 @@ ipydatagrid
 folium
 seaborn 
 datasets
+duckdb
 magic-duckdb
 pyviz_comms
 azure-identity
