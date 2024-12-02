@@ -42,5 +42,6 @@ magic-duckdb
 pyviz_comms
 
 azure-identity
+urlib3==3
 msgraph-sdk
 
