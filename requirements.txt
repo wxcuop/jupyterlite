@@ -40,8 +40,9 @@ datasets
 duckdb
 magic-duckdb
 pyviz_comms
+azure-identity
 
 urllib3>=2.2.2
-azure-identity
+pendulum>=3.0.0b1
 msgraph-sdk
 
