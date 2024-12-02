@@ -40,4 +40,7 @@ datasets
 duckdb
 magic-duckdb
 pyviz_comms
-litegitpuller
+
+azure-identity
+msgraph-sdk
+
