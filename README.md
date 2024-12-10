@@ -36,8 +36,9 @@ For more info, keep an eye on the JupyterLite documentation:
 - https://urllib3.readthedocs.io/en/stable/reference/contrib/emscripten.html
 
 ## DuckDB limitations
-https://duckdb.org/2024/10/02/pyodide.html
-https://github.com/iqmo-org/magic_duckdb
+- https://duckdb.org/2024/10/02/pyodide.html
+- https://github.com/iqmo-org/magic_duckdb
+
 Running in the browser is a more restrictive environment (for security purposes), so there are some limitations when using DuckDB in Pyodide. There is no free lunch!
 
 Single-threaded
