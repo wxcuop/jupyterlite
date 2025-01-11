@@ -56,7 +56,7 @@ Several extensions are automatically included: parquet, json, icu, tpcds, and tp
 
 Release cadence aligned with Pyodide
 
-At the time of writing, duckdb-pyodide is at 1.0.0 rather than 1.1.1
+At the time of writing, duckdb-pyodide is at 1.1.2
 
 
 ## Working around CORS
