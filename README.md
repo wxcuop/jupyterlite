@@ -69,4 +69,5 @@ At the time of writing, duckdb-pyodide is at 1.1.2
 - https://github.com/Zibri/cloudflare-cors-anywhere
 - https://github.com/testcab/docker-cors-anywhere/tree/master
 - https://github.com/wxcuop/corsproxy_cfworker/tree/main
+- https://github.com/wxcuop/py_cors_proxy/tree/main
 
