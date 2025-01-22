@@ -2,7 +2,7 @@
 
 JupyterLite deployed as a static site
 
-➡️ **https://wxcuop.github.io/jupyterlite**
+➡️ **https://wxcdev1.github.io/jupyterlite**
 
 ➡️**https://jupyterlite1.pages.dev/**
 
