@@ -23,6 +23,7 @@ At present, loadPackagesFromImports() will not download packages from PyPI, it w
 ## Packages built in Pyodide
 This is the list of Python packages included with the current version of Pyodide. These packages can be loaded with pyodide.loadPackage() or micropip.install()
 
+- https://pyodide.org/en/0.27.0/usage/packages-in-pyodide.html
 
 | Package Name       | Description                                                                                                   |
 |--------------------|---------------------------------------------------------------------------------------------------------------|
