@@ -66,8 +66,6 @@ This is the list of Python packages included with the current version of Pyodide
 | cffi_example       | An example package demonstrating how to use cffi for Python.                                                 |
 | cftime             | A library for date/time handling, often used with netCDF files.                                              |
 | charset-normalizer | A library to detect character encodings in text files.                                                       |
-| Package Name       | Description                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------|
 | clarabel           | A Python library for conic optimization.                                                                     |
 | click              | A Python package for creating command-line interfaces (CLIs) with minimal code.                              |
 | cligj              | Command-line utilities for GeoJSON operations.                                                               |
@@ -123,8 +121,6 @@ This is the list of Python packages included with the current version of Pyodide
 | ipython            | An interactive Python shell with advanced features like syntax highlighting and debugging.                   |
 | jedi               | A library for autocompletion and static analysis of Python code.                                             |
 | Jinja2             | A templating engine for Python that allows dynamic generation of text files.                                 |
-| Package Name       | Description                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------|
 | jiter              | A library for creating and iterating over random distributions.                                              |
 | joblib             | A library for lightweight pipelining and parallel execution in Python.                                       |
 | jsonschema         | A library for validating JSON schemas.                                                                       |
@@ -198,8 +194,6 @@ This is the list of Python packages included with the current version of Pyodide
 | pyiceberg          | A library for working with Apache Iceberg, a tabular data format for big data.                              |
 | pyinstrument       | A Python performance profiler for analyzing bottlenecks.                                                   |
 | pynacl             | A Python binding for the Networking and Cryptography (NaCl) library.                                       |
-| Package Name       | Description                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------|
 | pyodide-http       | A library for making HTTP requests in the Pyodide environment (Python running in the browser).               |
 | pyodide-unix-timezones | Provides timezone data for Pyodide's unix-like environment.                                               |
 | pyparsing          | A library for defining and executing grammars for parsing text.                                              |
@@ -263,8 +257,6 @@ This is the list of Python packages included with the current version of Pyodide
 | termcolor          | A library for adding color to terminal text output.                                                          |
 | texttable          | A library for creating simple ASCII tables.                                                                  |
 | threadpoolctl      | A library for controlling thread pools in Python.                                                            |
-| Package Name       | Description                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------|
 | tiktoken           | A library for tokenizing text used in OpenAI's language models.                                               |
 | tomli              | A library for parsing TOML files in Python.                                                                  |
 | tomli-w            | A library for writing TOML files in Python.                                                                  |
