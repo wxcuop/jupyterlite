@@ -43,9 +43,12 @@ Running in the browser is a more restrictive environment (for security purposes)
 
 Single-threaded
 Pyodide currently limits execution to a single thread
-A few extra steps to query remote files
+
+### A few extra steps to query remote files
 Remote files can't be accessed by DuckDB directly
+
 Instead, pull the files locally with Pyodide first
+
 DuckDB-Wasm has custom enhancements to make this possible, but these are not present in DuckDB's Python client
 
 
