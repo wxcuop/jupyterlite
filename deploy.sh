@@ -27,4 +27,5 @@ python -m pip install -r requirements.txt
 #python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
 # build the JupyterLite site
 jupyter lite --version
-jupyter lite build --contents content --output-dir dist --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
+#jupyter lite build --contents content --output-dir dist --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
+jupyter lite build --contents content --output-dir dist 
