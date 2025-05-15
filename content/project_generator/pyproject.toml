@@ -1,0 +1,21 @@
+[project]
+name = "{project_name}"
+version = "0.1.0"
+description = "{description}"
+authors = ["{author}"]
+license = "MIT"
+dependencies = [
+    # Add runtime dependencies here
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",  # Testing framework
+    "invoke>=1.7",  # Task runner
+    "build>=0.10",  # Build module
+    "cython>=0.29"  # Cython for C extension development
+]
+
+[build-system]
+requires = ["setuptools>=42", "cython"]
+build-backend = "setuptools.build_meta"
