@@ -45,19 +45,22 @@ def package_project(base_dir, output_file):
                 zipf.write(file_path, file_path.relative_to(base_dir.parent))
     print(f"Project packaged into {output_file}")
 
-def main():
-    parser = argparse.ArgumentParser(description="Generate a Python project structure.")
-    parser.add_argument("project_name", help="The name of the project")
-    parser.add_argument("--output", default="project.zip", help="The output zip file")
-
-    args = parser.parse_args()
+def main(project_name=None, output_file="project.zip"):
+    if project_name is None:
+        # Use argparse to handle arguments if none are passed
+        parser = argparse.ArgumentParser(description="Generate a Python project structure.")
+        parser.add_argument("project_name", help="The name of the project")
+        parser.add_argument("--output", default="project.zip", help="The output zip file")
+        args = parser.parse_args()
+        project_name = args.project_name
+        output_file = args.output
 
     # Create project structure
-    base_dir = create_project_structure(args.project_name)
+    base_dir = create_project_structure(project_name)
     
     try:
         # Package the project into a zip file
-        package_project(base_dir, args.output)
+        package_project(base_dir, output_file)
     finally:
         # Clean up the temporary directory
         shutil.rmtree(base_dir)
