@@ -25,13 +25,13 @@ def create_project_structure(project_name):
         f.write("# Unit tests go here\n")
 
     # Copy pyproject.toml, gitignore, tasks.py, and README.md files from the local directory
-    required_files = ["pyproject.toml", "gitignore", "tasks.py", "README.md"]  # List includes README.md
+    required_files = ["pyproject.toml", "gitignore.txt", "tasks.py", "README.md"]  # List includes README.md
     for file_name in required_files:
         file_path = Path(file_name)
         if not file_path.exists():
             print(f"Error: Required file '{file_name}' not found in the current directory.")
             sys.exit(1)  # Exit the script with an error code if a file is missing
-        destination_file = base_dir / (".gitignore" if file_name == "gitignore" else file_name)
+        destination_file = base_dir / (".gitignore" if file_name == "gitignore.txt" else file_name)
         shutil.copy(file_path, destination_file)
 
     return base_dir
