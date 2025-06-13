@@ -21,6 +21,7 @@ For more info, keep an eye on the JupyterLite documentation:
 - How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
 - Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
 
+- https://github.com/jupyterlite/pyodide-kernel/releases
 - https://pyodide.org/en/0.27.6/usage/packages-in-pyodide.html
 
 - https://www.bloomberg.com/company/stories/ipydatagrid-adds-interactive-data-grids-to-the-jupyter-ecosystem/
