@@ -1,12 +1,17 @@
 {
-    "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "disabledExtensions": [
-        "@jupyterlab/drawio-extension",
-        "jupyterlab-kernel-spy",
-        "jupyterlab-tour",
-        "@jupyterlab/apputils-extension:announcements"
-      ]
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "disabledExtensions": [
+      "@jupyterlab/drawio-extension",
+      "jupyterlab-kernel-spy",
+      "jupyterlab-tour",
+      "@jupyterlab/apputils-extension:announcements"
+    ]
+  },
+  "litePluginSettings": {
+    "@jupyterlite/pyodide-kernel-extension:kernel": {
+      "pyodideUrl": "https://wxcuop.github.io/pyodide-assets/pyodide.js"
     }
   }
+}
   
