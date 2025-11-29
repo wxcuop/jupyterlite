@@ -27,11 +27,26 @@ jobs:
           python -m pip install -r requirements.txt
           # python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
           # python -m pip install dulwich --config-settings "--build-option=--pure"
+      - name: Add jupyter-lite.json
+        run: |
+          cat > jupyter-lite.json <<'JSON'
+          {
+            "jupyter-lite-schema-version": 0,
+            "jupyter-config-data": {
+              "litePluginSettings": {
+                "@jupyterlite/pyodide-kernel-extension:kernel": {
+                  "pyodideUrl": "https://wxcuop.github.io/gh-pyodide/pyodide/pyodide.js"
+                }
+              }
+            }
+          }
+          JSON
       - name: Build the JupyterLite site
         run: |
           cp README.md content
           # jupyter lite build --contents content --output-dir dist --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
-          jupyter lite build --contents content --output-dir dist  --pyodide https://wxcuop.github.io/gh-pyodide/pyodide/
+          # We now rely on jupyter-lite.json to configure the pyodide URL
+          jupyter lite build --contents content --output-dir dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
