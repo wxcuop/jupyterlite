@@ -14,19 +14,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
       - name: Install the dependencies
         run: |
+          # libarchive-c speeds up extracting the heavy pyodide tarball drastically
+          python -m pip install libarchive-c
           python -m pip install -r requirements.txt
           # python -m pip install git+https://github.com/r-wasm/jupyterlite-webr-kernel.git
           # python -m pip install dulwich --config-settings "--build-option=--pure"
+
       - name: Add jupyter-lite.json
         run: |
           cat > jupyter-lite.json <<'JSON'
@@ -35,18 +41,24 @@ jobs:
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://wxcuop.github.io/gh-pyodide/pyodide/pyodide.js"
+                  "pyodideUrl": "./static/pyodide/pyodide.js"
                 }
               }
             }
           }
           JSON
+
       - name: Build the JupyterLite site
         run: |
-          cp README.md content
-          # jupyter lite build --contents content --output-dir dist --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
-          # We now rely on jupyter-lite.json to configure the pyodide URL
-          jupyter lite build --contents content --output-dir dist
+          mkdir -p content
+          cp README.md content/
+          
+          # We pass the --pyodide flag directly to bake the environment assets locally into /dist
+          jupyter lite build \
+            --contents content \
+            --output-dir dist \
+            --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
