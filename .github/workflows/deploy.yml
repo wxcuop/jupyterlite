@@ -53,11 +53,11 @@ jobs:
           mkdir -p content
           cp README.md content/
           
-          # We pass the --pyodide flag directly to bake the environment assets locally into /dist
+          # Downgraded from 0.27.5 to 0.27.2 to match jupyterlite-pyodide-kernel 0.7.0
           jupyter lite build \
             --contents content \
             --output-dir dist \
-            --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.5/pyodide-0.27.5.tar.bz2
+            --pyodide https://github.com/pyodide/pyodide/releases/download/0.27.2/pyodide-0.27.2.tar.bz2
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
